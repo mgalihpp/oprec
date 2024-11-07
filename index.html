@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+    :root {
+        scroll-behavior: smooth;
+    }
+
+    .animate-bounce {
+        animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-20px);
+        }
+
+        60% {
+            transform: translateY(-10px);
+        }
+    }
+</style>
+
+<body>
+
+    <header class="w-full sticky top-0 z-[1] bg-white">
+        <nav
+            class="flex items-center w-full max-w-7xl mx-auto relative gap-4 px-6 py-3.5 sm:px-8 lg:px-16 justify-between">
+            <a href="/" class="flex items-center gap-4">
+                <img src="./assets/logo.png" alt="logo" class="w-14 h-14">
+                <span class="sm:block hidden font-bold text-lg">
+                    BEM FIKTI UG
+                </span>
+            </a>
+            <ul class="sm:flex items-center gap-4 hidden">
+                <li class="hover:text-gray-600">
+                    <a href="#visi">Visi</a>
+                </li>
+                <li class="hover:text-gray-600">
+                    <a href="">Misi</a>
+                </li>
+                <li class="hover:text-gray-600">
+                    <a href="">Persyaratan</a>
+                </li>
+                <li class="hover:text-gray-600">
+                    <a href="">Alur Pendaftaran</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="w-full mx-auto space-y-12">
+        <section id="hero" class="relative">
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full items-center px-6 sm:px-8 lg:px-16 max-w-7xl mx-auto py-24">
+                <div class="max-w-xl">
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-thin">
+                        Open Recruitment <br />
+                        <span class="font-bold">
+                            Staff
+                        </span> BEM <br />
+                        FIKTI UG
+                    </h1>
+
+                    <p class="mt-8 text-sm sm:text-base text-gray-500 font-medium">
+                        Bergabunglah bersama kami untuk membangun dan menginspirasi! Jadilah bagian dari perubahan
+                        nyata
+                        bersama BEM FIKTI Universitas Gunadarma, dan bersama kita wujudkan visi untuk mahasiswa dan
+                        masyarakat.
+
+                    </p>
+
+                    <button
+                        class="bg-purple-500 text-white px-6 py-2 rounded-lg mt-6 font-semibold outline-none hover:bg-purple-600 transition duration-150 ease-in-out border-purple-700 active:bg-purple-700 border-l-4 border-b-4">
+                        Daftar
+                    </button>
+
+                </div>
+                <div class="">
+                    <img src="./assets/4240093.png" alt="agency">
+                </div>
+            </div>
+
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 translate-y-1/2">
+                <a href="#visi" scroll-down class="flex flex-col items-center gap-2 animate-bounce">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="w-6 h-6 fill-gray-400"
+                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                        image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                        viewBox="0 0 512 298.04">
+                        <path fill-rule="nonzero"
+                            d="M12.08 70.78c-16.17-16.24-16.09-42.54.15-58.7 16.25-16.17 42.54-16.09 58.71.15L256 197.76 441.06 12.23c16.17-16.24 42.46-16.32 58.71-.15 16.24 16.16 16.32 42.46.15 58.7L285.27 285.96c-16.24 16.17-42.54 16.09-58.7-.15L12.08 70.78z" />
+                    </svg>
+                    <span class="text-sm font-medium">Scroll down</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="visi" class="bg-neutral-100">
+            <div
+                class="grid sm:grid-cols-2 grid-cols-1 gap-2 items-center px-6 sm:px-8 lg:px-16 mx-auto max-w-7xl py-24 mt-24">
+                <div>
+                    <h3 class="text-2xl sm:text-5xl uppercase font-bold tracking-wide">
+                        visi bem fikti ug periode 2024/2025
+                    </h3>
+                </div>
+                <div>
+                    <p class="text-sm sm:text-lg">
+                        Mewujudkan BEM FIKTI UG sebagai wadah yang akrab, informatif, memiliki daya guna,
+                        serta menjadi support sistem bagi mahasiswa sehingga menjadikan FIKTI yang dekat, bersahabat
+                        dan produktif
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="visi1">
+            <div
+                class="grid sm:grid-cols-2 grid-cols-1 gap-2 items-center px-6 sm:px-8 lg:px-16 mx-auto max-w-7xl py-16">
+                <div>
+                    <h3 class="text-2xl sm:text-5xl uppercase font-bold tracking-wide">
+                        visi bem fikti ug periode 2024/2025
+                    </h3>
+                </div>
+                <div>
+                    <p class="text-sm sm:text-lg">
+                        Mewujudkan BEM FIKTI UG sebagai wadah yang akrab, informatif, memiliki daya guna,
+                        serta menjadi support sistem bagi mahasiswa sehingga menjadikan FIKTI yang dekat, bersahabat
+                        dan produktif
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="visi1" class="bg-neutral-100">
+            <div
+                class="grid sm:grid-cols-2 grid-cols-1 gap-2 items-center px-6 sm:px-8 lg:px-16 mx-auto max-w-7xl py-16">
+                <div>
+                    <h3 class="text-2xl sm:text-5xl uppercase font-bold tracking-wide">
+                        visi bem fikti ug periode 2024/2025
+                    </h3>
+                </div>
+                <div>
+                    <p class="text-sm sm:text-lg">
+                        Mewujudkan BEM FIKTI UG sebagai wadah yang akrab, informatif, memiliki daya guna,
+                        serta menjadi support sistem bagi mahasiswa sehingga menjadikan FIKTI yang dekat, bersahabat
+                        dan produktif
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="visi1" class="bg-neutral-100">
+            <div
+                class="grid sm:grid-cols-2 grid-cols-1 gap-2 items-center px-6 sm:px-8 lg:px-16 mx-auto max-w-7xl py-16">
+                <div>
+                    <h3 class="text-2xl sm:text-5xl uppercase font-bold tracking-wide">
+                        visi bem fikti ug periode 2024/2025
+                    </h3>
+                </div>
+                <div>
+                    <p class="text-sm sm:text-lg">
+                        Mewujudkan BEM FIKTI UG sebagai wadah yang akrab, informatif, memiliki daya guna,
+                        serta menjadi support sistem bagi mahasiswa sehingga menjadikan FIKTI yang dekat, bersahabat
+                        dan produktif
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const scrollDownElement = document.querySelector('a[scroll-down]');
+            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+            if (scrollPosition > 0) {
+                scrollDownElement.style.display = 'none';
+            } else {
+                scrollDownElement.style.display = 'flex';
+            }
+        });
+    </script>
+</body>
+
+</html>
