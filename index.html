@@ -48,44 +48,51 @@
     <!-- HEADER -->
 
     <header id="navigation" class="sticky top-0 w-full z-10">
-        <nav
-            class="relative mx-auto flex max-w-screen-2xl gap-4 px-6 py-3.5 sm:flex items-center justify-between sm:px-8 lg:px-16">
-            <a class="flex w-full items-center gap-2" href="/#hero">
-                <img alt="logo" loading="lazy" width="30" height="30" decoding="async" data-nimg="1"
-                    class="overflow-hidden rounded-md object-cover" style="color:transparent"
-                    src="./assets/images/logo.png">
-                <h1 class="text-xl max-md:text-sm font-bold max-sm:hidden">BEM FIKTI UG</h1>
-            </a>
-            <div class="flex items-center justify-end gap-x-4 sm:hidden">
-                <button class="col-end-1 hidden max-sm:block" type="button" aria-haspopup="dialog" aria-expanded="false"
-                    aria-controls="radix-:R56fhja:" data-state="closed" name="mobile-nav">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-menu size-6">
-                        <line x1="4" x2="20" y1="12" y2="12"></line>
-                        <line x1="4" x2="20" y1="6" y2="6"></line>
-                        <line x1="4" x2="20" y1="18" y2="18"></line>
+        <nav class="bg-white border-gray-200">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-4 sm:px-8 lg:px-16">
+                <!-- Logo -->
+                <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="./assets/images/logo.png" class="h-8" alt="BEM FIKTI UG Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap">BEM FIKTI UG</span>
+                </a>
+
+                <!-- Hamburger Button for Mobile -->
+                <button type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-600 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    aria-controls="navbar-default" aria-expanded="false"
+                    onclick="document.getElementById('navbar-default').classList.toggle('hidden')">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
 
-                <!-- TODO MOBILE NAVIGATION -->
+                <!-- Menu Items -->
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-200 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+                        <li>
+                            <a href="#visi"
+                                class="block py-2 px-3 text-gray-900 hover:bg-gray-100 rounded md:hover:bg-transparent md:hover:text-purple-700 md:p-0"
+                                aria-current="page">Visi & Misi</a>
+                        </li>
+                        <li>
+                            <a href="#persyaratan"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0">Persyaratan</a>
+                        </li>
+                        <li>
+                            <a href="#alur_pendaftaran"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0">Alur
+                                Pendaftaran</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="hidden items-center sm:flex text-nowrap">
-                <li>
-                    <a aria-current="page" aria-label="Visi" href="#visi"
-                        class="relative mx-2 inline-block cursor-pointer rounded-md px-4 py-2 font-medium capitalize transition-colors hover:bg-black/10 text-black">Visi
-                        & Misi</a>
-                </li>
-                <li>
-                    <a class="relative mx-2 inline-block cursor-pointer rounded-md px-4 py-2 font-medium capitalize transition-colors hover:bg-black/10 text-black"
-                        href="#persyaratan">Persyaratan</a>
-                </li>
-                <li>
-                    <a class="relative mx-2 inline-block cursor-pointer rounded-md px-4 py-2 font-medium capitalize transition-colors hover:bg-black/10 text-black"
-                        href="#alur_pendaftaran">Alur Pendaftaran</a>
-                </li>
-            </ul>
         </nav>
+
+
     </header>
 
     <!-- END HEADER -->
@@ -109,7 +116,7 @@
                         FIKTI UG
                     </h1>
 
-                    <p class="text-sm sm:text-base text-gray-500 font-medium">
+                    <p class="text-sm sm:text-base text-gray-600 font-medium">
                         Bergabunglah bersama kami untuk membangun dan menginspirasi! Jadilah bagian dari perubahan
                         nyata
                         bersama BEM FIKTI Universitas Gunadarma, dan bersama kita wujudkan visi untuk mahasiswa dan
@@ -130,7 +137,7 @@
                 </div>
                 <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
                     <a href="#visi" scroll-down class="flex flex-col items-center gap-2 animate-bounce">
-                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="w-6 h-6 fill-gray-400"
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="w-6 h-6 fill-gray-500"
                             shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                             image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
                             viewBox="0 0 512 298.04">
@@ -161,7 +168,7 @@
                             VISI DAN MISI <br> BEM FIKTI UG 2024/2025</h2>
                     </div>
                     <div class="relative w-full text-center lg:text-left lg:w-2/4">
-                        <p class="text-lg font-normal text-gray-500 mb-5">Mewujudkan BEM FIKTI UG sebagai wadah yang
+                        <p class="text-lg font-normal text-gray-600 mb-5">Mewujudkan BEM FIKTI UG sebagai wadah yang
                             akrab, informatif, memiliki daya guna,
                             serta menjadi support sistem bagi mahasiswa sehingga menjadikan FIKTI yang dekat, bersahabat
                             dan produktif</p>
@@ -226,7 +233,7 @@
                             class="text-xl font-semibold text-gray-900 mb-3 capitalize transition-all duration-500 group-hover:text-white">
                             Penyaluran Informasi ke Mahasiswa</h4>
                         <p
-                            class="text-sm font-normal text-gray-500 transition-all duration-500 leading-5 group-hover:text-white">
+                            class="text-sm font-normal text-gray-600 transition-all duration-500 leading-5 group-hover:text-white">
                             Mewujudkan penyaluran informasi secara masif guna memastikan informasi yang ada agar
                             tersampaikan ke mahasiswa melalui penyampaian secara langsung di kampus dan didukung oleh
                             sosial media.
@@ -253,7 +260,7 @@
                             class="text-xl font-semibold text-gray-900 mb-3 capitalize transition-all duration-500 group-hover:text-white">
                             Suportif dan Kompetitif</h4>
                         <p
-                            class="text-sm font-normal text-gray-500 transition-all duration-500 leading-5 group-hover:text-white">
+                            class="text-sm font-normal text-gray-600 transition-all duration-500 leading-5 group-hover:text-white">
                             Menjadi BEM FIKTI yang suportif dalam hal akademik maupun non akademik dalam rangka
                             meningkatkan Kompetensi serta daya saing mahasiswa FIKTI dan juga kedekatan antara BEM
                             dengan mahasiswa.
@@ -317,7 +324,7 @@
                             class="text-xl font-semibold text-gray-900 mb-3 capitalize transition-all duration-500 group-hover:text-white">
                             Aktif dan Responsif untuk Mahasiswa</h4>
                         <p
-                            class="text-sm font-normal text-gray-500 transition-all duration-500 leading-5 group-hover:text-white">
+                            class="text-sm font-normal text-gray-600 transition-all duration-500 leading-5 group-hover:text-white">
                             Guna memastikan kehadiran BEM FIKTI dalam menyelesaikan permasalahan mahasiswa sebagai
                             bentuk advokasi, BEM FIKTI berkomitmen untuk selalu aktif dan responsif dalam menangani
                             setiap isu dan keluhan yang dihadapi oleh mahasiswa
@@ -345,7 +352,7 @@
                             class="text-xl font-semibold text-gray-900 mb-3 capitalize transition-all duration-500 group-hover:text-white">
                             Koordinator Wilayah</h4>
                         <p
-                            class="text-sm font-normal text-gray-500 transition-all duration-500 leading-5 group-hover:text-white">
+                            class="text-sm font-normal text-gray-600 transition-all duration-500 leading-5 group-hover:text-white">
                             Menempatkan koordinator wilayah di lokasi kampus Salemba, Kalimalang, Karawaci, dan
                             Cengkareng sebagai perwakilan BEM FIKTI yang dapat mengakomodasi mahasiswa di luar lokasi
                             kampus Depok.
@@ -592,7 +599,7 @@
         <section id="cta" class="py-32">
             <div class="relative max-w-7xl mx-auto w-full h-[500px] sm:h-96">
                 <div
-                    class="absolute inset-0 bg-gradient-to-br from-zinc-900 via-slate-900 to-emerald-900 sm:rounded-xl" />
+                    class="absolute inset-0 bg-gradient-to-br from-zinc-900 via-slate-900 to-emerald-900 xl:rounded-xl" />
                 <div class="relative flex items-center justify-center h-full px-6 sm:p-0">
                     <div class="mx-auto max-w-2xl text-center">
                         <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
